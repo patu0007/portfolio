@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>prathmesh - Creatives Design Studio</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- STYLE LIBS below -->
+	<link rel="stylesheet" type="text/css" href="MCGDS.css">
+	<link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
+
+	<!-- FONTAWESOME link -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Google fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400i,700,900,900i|Roboto:300,300i,400,500,700,900,900i" rel="stylesheet">
+
+
+	<!-- JAVASCRIPT LIBS at the bottom of the body-->
+
+
+</head>
+
+		<style>
+            * {
+	box-sizing: border-box;
+	letter-spacing: .08em;
+	}
+
+html {
+	scroll-behavior: smooth;
+	}
+
+body {
+	position: relative;
+	margin: 0 auto;
+	background: url("https://visualhunt.com/photos/1/designer-typography-table-shop.jpg?s=l"), rgba(0,0,0,.6);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-blend-mode: multiply;
+	background-size: cover;
+	min-width: 600px;
+	height: 3000px;
+	}
+
+#HomePage {
+	height: 100vh;
+	}
+/* 
+-------------------------
+-------------------------
+-------------------------
+-------------------------
+-------------------------
+*/
+#navBar {
+	position: fixed;
+	transition: background 500ms;
+	z-index: 1000;
+	}
+
+
+#navLinks1 {
+	float: right;
+	position: relative;
+	top: -70px;
+	transition: right 500ms;
+	z-index: 8;
+	}
+
+
+#brandLogo {
+	margin-left: 20px;
+	width: 100px;
+	height: auto;
+	transition: left 500ms;
+	position: relative;
+	z-index: 7 !important;
+	}
+
+nav a {
+	font-family: roboto, serif;
+	font-size: 15px;
+	font-weight: 300;
+	color: gainsboro;
+	text-decoration: none;
+	margin-left: 20px;
+	margin-right: 18px;
+	padding: 3px 1px 3px 1px;
+	z-index: 1000;
+	}
+
+a:nth-child(5):not(.Links2) {
+	color: gainsboro;
+	border: 1px solid rgba(255,255,255,.1);
+	background: rgba(189, 183, 19,.25);
+	border-radius: 30px;
+	padding: 5px 7px;
+	transition: border 500ms ease;
+}
+
+a:nth-child(5):not(.Links2):hover {
+	color: white;
+	border: 1px solid gold;
+	border-radius: 30px;
+	padding: 5px 7px;
+}
+
+.Links:hover {
+	animation: navUnderline 700ms, goldentext 500ms;
+	animation-fill-mode: forwards;
+	}
+
+.Links2:hover {
+	animation: goldentext 500ms;
+	animation-fill-mode: forwards;
+	}
+
+.burger-styles {
+	color: white;
+}
+
+
+
+.navUnderline {
+	-webkit-animation-name: navUnderline;
+  			animation-name: navUnderline;
+  	-webkit-animation-timing-function: ease;
+  		  animation-timing-function: ease;
+	}
+
+@keyframes navUnderline {
+	0% {
+		border-bottom: 1px solid black;
+		}
+	100%{
+		border-bottom: 1px solid gainsboro;
+		}
+	}
+
+.goldentext {
+	-webkit-animation-name: goldentext;
+  			animation-name: goldentext;
+  	-webkit-animation-timing-function: ease;
+  		  animation-timing-function: ease;
+	}
+
+@keyframes goldentext {
+	0% {
+		color: white;
+		}
+	100%{
+		color: yellow;
+		}
+	}
+
+h1 {
+	font-weight: 900 !important;
+	font-size: 150px !important;
+	color: gainsboro;
+	text-align: left;
+	font-kerning: 20%;
+	line-height: 100%;
+	transition: top 500ms ease;
+	}
+
+#herotext-wrapper {
+	top: 350px;
+	transition: top 1200ms ease;	
+}
+
+h4 {
+	font-family: merriweather !important;
+	font-style: italic;
+	font-size: 40px !important;
+	color: gold;
+	margin-bottom: 100px; 
+	text-align: right !important;}
+
+@media screen and (max-width: 600px) {
+	h1 {
+		font-size: 50px !important;
+		}
+	h4 {
+		font-size: 15px !important;
+		text-align: center !important;
+		}
+	#brandLogo {
+		background: rbga(0,0,0,.5);
+		}
+
+	}
+
+.w3-display-middle {
+	text-align: center;
+	z-index: -1; }
+
+.arrow {
+	background: rgba(0,0,0,.5);
+}
+
+#scrollPROMPT {
+	visibility: visible;
+}
+
+.scrollprompt {
+	margin-right:30px !important; 
+	margin-bottom: 50px !important;
+	text-decoration: none;
+}
+
+
+/* ABOUT ME SECTION BELOW */
+
+
+
+
+.myAvatar {	}
+
+h3 {
+	font-family: roboto !important;
+	font-weight: 700 !important;
+	font-size: 34px !important;	}
+
+.w3-black-translucent {
+	background-color: rgba(0,0,0,.85) !important; }
+
+.w3-quarter {
+	z-index: -20 !important; }
+
+.w3-container p {
+	font-family: roboto;
+	font-weight: 300 !important;
+	color: white;
+	color: #B9BBAE; }
+
+.w3-text-gold {
+	color: #A39E0E;	}
+
+.w3-gold {
+	background: #A39E0E !important;	}
+
+.amr-darkgray {
+	background-color: #2C2B29; }
+
+.type-gainsboro {
+	color: gainsboro !important; }
+
+.type-style-merri {
+	font-family: merriweather !important; }
+
+.type-style-roboto {
+	font-family: roboto !important;
+	font-weight: 500; }
+
+/* ABOUT ME end */
+
+
+
+
+
+/* PORTFOLIO SECTION BELOW */
+
+#AmarPortfolio {
+	background: rgba(0,0,0,.8);
+	min-height: 100vh auto;
+	width: 100%;
+	margin-top: 50px;
+	padding-bottom: 50px; }
+
+#myBtnContainer {
+	margin-top: 90px; }
+
+.btn {
+	padding: 7px 12px !important;
+	background: darkslategray;
+	font-family: roboto !important;
+	font-weight: 300 !important;
+	color: gold; }
+
+.w3-round-small {
+	border-radius: 2px !important;
+	border: none; }
+
+.w3-row img {
+	width: 100%;
+	height: auto; }
+
+.thumbnail-container {
+	position: relative; }
+
+.thumbnail-image {
+	width: 100%
+	height: auto; }
+
+.thumbnail-p {
+	font-weight: roboto;
+	font-weight: 300;
+	font-size: 30px;
+	position: relative;
+	margin: 60px 60px!important; }
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(255,255,255,.7);
+	overflow: hidden;
+	width: 100%
+	height: 100%;
+	transform: scale(0);
+	transition: 500ms ease;
+	text-align: center; }
+
+.thumbnail-container:hover .overlay {
+	transform: scale(1); }
+
+
+
+        </style>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<!-- ===============Section Div==================== -->
+<section id="HomePage" class="w3-display-container">
+<!-- NAVIGATION below-->
+<nav id="navBar" class="w3-bar w3-small" role="navigation">
+	<div class="w3-margin">
+	<img src="https://res.cloudinary.com/dayrafxcq/image/upload/v1553248423/mayuyucreatives_b8av7b.png" id="brandLogo" alt="Mayuyu Creatives Logo">
+	</div>
+	<div class="w3-margin w3-display-container" id="navLinks1">
+	<a href="#HomePage" class="Links w3-hide-small">Home</a>
+	<a href="#AboutAmar" class="Links w3-hide-small">About Me</a> 
+	<a href="#AmarPortfolio" class="Links w3-hide-small">My Work</a>
+	<a href="#Services" class="Links w3-hide-small">Services</a>
+	<a href="#AmarContact" class="w3-hide-small">Let's Talk</a>
+	<a href="javascript:void(0)" class="Links2 w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium w3-display-topright w3-hover-black" style="font-size: 23px; color: white; position: relative; left: 50px !important;" onclick="navBurger()">&#9776;</a>
+	</div>
+	<div id="burger" class="w3-bar-block w3-black-translucent w3-hide w3-hide-large w3-hide-medium w3-hover-black">
+  		<a href="#HomePage" class="w3-bar-item Links2">Home</a>
+		<a href="#AboutAmar" class="w3-bar-item Links2">About Me</a> 
+		<a href="#AmarPortfolio" class="w3-bar-item Links2">My Work</a>
+		<a href="#Services" class="w3-bar-item Links2">Services</a>
+		<a href="#AmarContact" class="w3-bar-item Links2">Let's Talk</a>
+	</div>
+</nav>
+<!-- NAVIGATION end-->
+	<div class="w3-display-middle" id="herotext-wrapper">
+		<h1 style="letter-spacing: 20px;">Patu <br>CREATIVES</h1>
+		<h4>&nbsp&nbsp a graphic design studio</h4>
+	</div>
+	<div id="scrollPROMPT" class="w3-black-translucent w3-hide-small">
+		<a href="#AboutAmar" class="w3-text-gold w3-display-bottomright scrollprompt">scroll down</a>
+	</div>
+</section>
+<!-- ===============Section Div==================== -->
+<section id="AboutAmar" class="w3-content" style="max-width: 1500px;	 padding-top: 90px;">
+	<div class="w3-row w3-row-padding">
+
+	<!-- for Version 3 or higher  - must consider replacing this with content from below instead of resume type. add a link on the page to the resume site instead..
+
+	"What is it that’s unique about me?"
+	“What is my background? How did I get in to UX?”
+	“What kind of skills do I have that will be useful for this role?”
+	“What are my interests and passion that really lines up with this job and how can I relate my previous experience or project to it?”
+	“What do I lack in terms of skill or knowledge?” — being self-aware is very important-- >
+
+
+		<!-- grid 1, left column-->
+		<div class="w3-quarter">
+			<div class="w3-black-translucent" style="border-radius: 3px !important;">
+				<div class="w3-display-container">
+					<img src="https://avatars3.githubusercontent.com/u/25453510?s=460&v=4" alt="Amar's Photo" class="myAvatar" style="width: 100%; border-top-left-radius: 3px; border-top-right-radius: 3px">
+					<h3 class="w3-display-bottomleft w3-padding type-style-roboto w3-text-black">Amar Mayuyu</h5>
+				</div>				
+				<div class="w3-container" style="word-wrap: break-word;">
+					<p style="font-family: roboto; font-weight: 300"><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-gold"></i>Graphic Designer</p>	
+					<p style="font-family: roboto; font-weight: 300"><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-gold"></i>Manila, Philippines</p>
+					<p style="font-family: roboto; font-weight: 300"><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-gold"></i>amarmayuyu@mcgds.com</p>		
+
+					<hr style="border-top: 1px solid #B9BBAE">
+
+					<p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-gold"></i>Skills</b></p>
+
+					<p>Inkscape</p>
+					<div class="amr-darkgray w3-round-large w3-small">
+						<div class="w3-container w3-center w3-round-xlarge w3-gold" style="width:95%; color: #000">95%
+						</div>
+					</div>
+
+					<p>Adobe Illustrator</p>
+					<div class="amr-darkgray w3-round-large w3-small">
+						<div class="w3-container w3-center w3-round-xlarge w3-gold" style="width:70%; color: #000">70%
+						</div>
+					</div>
+
+					<p>Adobe Photoshop</p>
+					<div class="amr-darkgray w3-round-large w3-small">
+						<div class="w3-container w3-center w3-round-xlarge w3-gold" style="width:40%; color: #000">40%
+						</div>
+					</div>
+
+					<p>Adobe Indesign</p>
+					<div class="amr-darkgray w3-round-large w3-small">
+						<div class="w3-container w3-center w3-round-xlarge w3-gold" style="width:30%; color: #000">30%
+						</div>
+					</div>
+
+					<p>Photography</p>
+					<div class="amr-darkgray w3-round-large w3-small">
+						<div class="w3-container w3-center w3-round-xlarge w3-gold" style="width:25%; color: #000">25%
+						</div>
+					</div>
+
+					<p>Lettering and Typography</p>
+					<div class="amr-darkgray w3-round-large w3-small">
+						<div class="w3-container w3-center w3-round-xlarge w3-gold" style="width:85%; color: #000">85%
+						</div>
+					</div>
+
+					<p>HTML and CSS</p>
+					<div class="amr-darkgray w3-round-large w3-small">
+						<div class="w3-container w3-center w3-round-xlarge w3-gold" style="width:77%; color: #000">77%
+						</div>
+					</div>
+
+					<p>Javascript</p>
+					<div class="amr-darkgray w3-round-large w3-small">
+						<div class="w3-container w3-center w3-round-xlarge w3-gold" style="width:80%; color: #000">60%
+						</div>
+					</div>
+
+					<p>PHP</p>
+					<div class="amr-darkgray w3-round-large w3-small">
+						<div class="w3-container w3-center w3-round-xlarge w3-gold" style="width:5%; color: #000">.
+						</div>
+					</div>
+
+					<p>Python</p>
+					<div class="amr-darkgray w3-round-large w3-small">
+						<div class="w3-container w3-center w3-round-xlarge w3-gold w3-text-gold" style="width:5%; color: #000">.
+						</div>
+					</div>
+
+					<br><br>
+
+
+
+				</div>
+			</div>
+		</div>
+		<!-- grid 2, right column -->
+		<div class="w3-threequarter">
+			<div class="w3-container w3-card w3-black-translucent w3-margin-bottom" style="border-radius: 3px">
+        		<h2 class="w3-text-grey w3-padding-16 type-style-roboto" ><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-gold"></i>Work Experience</h2>
+        		<div class="w3-container">
+          			<h5 class="w3-opacity type-style-roboto type-gainsboro"><b>Web Developer / SGS Phils.</b></h5>
+          			<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2017 - <span class="w3-tag w3-gold w3-round w3-text-black">Current</span></h6>
+          			<p>Created and maintained the team's web portal for tools and referrence.</p>
+          		<hr>
+        		</div>
+	        	<div class="w3-container">
+	          		<h5 class="w3-opacity type-style-roboto type-gainsboro"><b>Graphic Designer / mayuyucreatives.com</b></h5>
+	          		<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2014 - <span class="w3-tag w3-gold w3-round w3-text-black">Current</span></h6>
+	          		<p>Founded the Mayuyu Creatives design studio. Responsible for creating visual aids, designing logos and presentations. Created event posters. Complete oversight of the creative design and direction. </p>
+	          		<br>
+	        	</div>
+      		</div>
+
+      <div class="w3-container w3-card w3-black-translucent" style="border-radius: 3px">
+        	<h2 class="w3-text-grey w3-padding-16 type-style-roboto"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-gold"></i>Awards & Certifications</h2>
+        	<div class="w3-container">
+          		<h5 class="w3-opacity type-style-roboto type-gainsboro"><b>W3Schools.com</b></h5>
+          		<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
+            	<p>- Certified in HTML
+          		<br>- Certified in CSS
+          		<br>- Javascript Developer Certification(<em>This is just a mock</em>)</p>
+          	<hr>
+        	</div>
+        	<div class="w3-container">
+          		<h5 class="w3-opacity type-style-roboto type-gainsboro"><b>freeCodeCamp</b></h5>
+          		<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018 - 2019</h6>
+          		<p>Front-End Web Development Completion Certificate</p>
+          	<hr>
+        	</div>
+        	<br>
+        	<br>
+      </div>
+	</div>
+	</div>
+	
+</section>
+<!-- ===============Section Div==================== -->
+<section id="AmarPortfolio">
+	<div class="w3-container">
+		<div id="myBtnContainer" class="w3-container w3-padding">
+		  <button class="btn active w3-round-small" onclick="filterSelection('all')"> Show all</button>
+		  <button class="btn w3-round-small" onclick="filterSelection('Logos')"> Logos</button>
+		  <button class="btn w3-round-small" onclick="filterSelection('Posters')"> Posters</button>
+		  <button class="btn w3-round-small" onclick="filterSelection('Icons')"> Icons</button>
+		  <button class="btn w3-round-small" onclick="filterSelection('Artworks')">Other Artworks</button>
+		</div>
+	</div>
+
+	<div class="w3-panel">
+		<div class="w3-row">
+			<div class="w3-quarter">
+				<div class="thumbnail-container">
+					<img src="https://visualhunt.com/photos/1/woman-drinking-cocktail-drink-at-garden-party.jpg?s=l" class="thumbnail-image">
+					<div class="overlay">
+					<p class="thumbnail-p">
+						Wordmark Logo<br><span style="font-size: 15px"> Unused design</span>
+						<i class="fas fa-external-link-alt"></i>
+					</p>
+					</div>
+				</div>
+			</div>
+			<div class="w3-quarter">
+				<div class="thumbnail-container">
+					<img src="https://visualhunt.com/photos/1/woman-drinking-cocktail-drink-at-garden-party.jpg?s=l" class="thumbnail-image">
+					<div class="overlay">
+					<p class="thumbnail-p">
+						Crest Logo<br><span style="font-size: 15px"> Unused design</span>
+						<i class="fas fa-external-link-alt"></i>
+					</p>
+					</div>
+				</div>
+			</div>
+			<div class="w3-quarter">
+				<div class="thumbnail-container">
+					<img src="https://visualhunt.com/photos/1/woman-drinking-cocktail-drink-at-garden-party.jpg?s=l" class="thumbnail-image">
+					<div class="overlay">
+					<p class="thumbnail-p">
+						Iconic Logo
+						<br><span style="font-size: 15px"> Unused design</span>
+						<i class="fas fa-external-link-alt"></i>
+					</p>
+					</div>
+				</div>
+			</div>
+			<div class="w3-quarter">
+				<div class="thumbnail-container">
+					<img src="https://visualhunt.com/photos/1/woman-drinking-cocktail-drink-at-garden-party.jpg?s=l" class="thumbnail-image">
+					<div class="overlay">
+					<p class="thumbnail-p">
+						Emblem Type Logo<br><span style="font-size: 15px"> Unused design</span>
+						<i class="fas fa-external-link-alt"></i>
+					</p>
+					</div>
+				</div>
+			</div>
+			<div class="w3-quarter">
+				<div class="thumbnail-container">
+					<img src="https://visualhunt.com/photos/1/woman-drinking-cocktail-drink-at-garden-party.jpg?s=l" class="thumbnail-image">
+					<div class="overlay">
+					<p class="thumbnail-p">
+						Logo Lala Luli<br><span style="font-size: 15px"> Unused design</span>
+						<i class="fas fa-external-link-alt"></i>
+					</p>
+					</div>
+				</div>
+			</div>
+			<div class="w3-quarter">
+				<div class="thumbnail-container">
+					<img src="https://visualhunt.com/photos/1/woman-drinking-cocktail-drink-at-garden-party.jpg?s=l" class="thumbnail-image">
+					<div class="overlay">
+					<p class="thumbnail-p">
+						Logo Lala Luli<br><span style="font-size: 15px"> Unused design</span>
+						<i class="fas fa-external-link-alt"></i>
+					</p>
+					</div>
+				</div>
+			</div>
+			<div class="w3-quarter">
+				<div class="thumbnail-container">
+					<img src="https://visualhunt.com/photos/1/woman-drinking-cocktail-drink-at-garden-party.jpg?s=l" class="thumbnail-image">
+					<div class="overlay">
+					<p class="thumbnail-p">
+						Logo Lala Luli<br><span style="font-size: 15px"> Unused design</span>
+						<i class="fas fa-external-link-alt"></i>
+					</p>
+					</div>
+				</div>
+			</div>
+			<div class="w3-quarter">
+				<div class="thumbnail-container">
+					<img src="https://visualhunt.com/photos/1/woman-drinking-cocktail-drink-at-garden-party.jpg?s=l" class="thumbnail-image">
+					<div class="overlay">
+					<p class="thumbnail-p">
+						Logo Lala Luli<br><span style="font-size: 15px"> Unused design</span>
+						<i class="fas fa-external-link-alt"></i>
+					</p>
+					</div>
+				</div>
+			</div>
+			<div class="w3-quarter">
+				<div class="thumbnail-container">
+					<img src="https://visualhunt.com/photos/1/woman-drinking-cocktail-drink-at-garden-party.jpg?s=l" class="thumbnail-image">
+					<div class="overlay">
+					<p class="thumbnail-p">
+						Logo Lala Luli<br><span style="font-size: 15px"> Unused design</span>
+						<i class="fas fa-external-link-alt"></i>
+					</p>
+					</div>
+				</div>
+			</div>
+			<div class="w3-quarter">
+				<div class="thumbnail-container">
+					<img src="https://visualhunt.com/photos/1/woman-drinking-cocktail-drink-at-garden-party.jpg?s=l" class="thumbnail-image">
+					<div class="overlay">
+					<p class="thumbnail-p">
+						Logo Lala Luli<br><span style="font-size: 15px"> Unused design</span>
+						<i class="fas fa-external-link-alt"></i>
+					</p>
+					</div>
+				</div>
+			</div>
+			<div class="w3-quarter">
+				<div class="thumbnail-container">
+					<img src="https://visualhunt.com/photos/1/woman-drinking-cocktail-drink-at-garden-party.jpg?s=l" class="thumbnail-image">
+					<div class="overlay">
+					<p class="thumbnail-p">
+						Logo Lala Luli<br><span style="font-size: 15px"> Unused design</span>
+						<i class="fas fa-external-link-alt"></i>
+					</p>
+					</div>
+				</div>
+			</div>
+			<div class="w3-quarter">
+				<div class="thumbnail-container">
+					<img src="https://visualhunt.com/photos/1/woman-drinking-cocktail-drink-at-garden-party.jpg?s=l" class="thumbnail-image">
+					<div class="overlay">
+					<p class="thumbnail-p">
+						Logo Lala Luli<br> Unused design
+						<i class="fas fa-external-link-alt"></i>
+					</p>
+					</div>
+				</div>
+			</div>
+			
+				
+		</div>	
+		
+	</div>
+</section>
+<!-- ===============Section Div==================== -->
+<section id="Services">
+</section>
+<!-- ===============Section Div==================== -->
+<footer>
+</footer>
+
+
+<script >
+
+    
+window.onscroll = function() {scrollFunction(),scrollFunction2()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50 ) {
+    document.getElementById("navBar").style.background = "linear-gradient(to bottom, rgba(0,0,0,1),rgba(0,0,0,.7),rgba(0,0,0,.4	),rgba(0,0,0,0))";
+  } else {
+    document.getElementById("navBar").style.background = "linear-gradient(to bottom, rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0))";
+  }
+}
+
+function scrollFunction2() {
+	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 ) {
+	document.getElementById("scrollPROMPT").style.visibility = "hidden";
+	document.getElementById("herotext-wrapper").style.top = "-1700px";
+	} else {
+	document.getElementById("scrollPROMPT").style.visibility = "visible";
+	document.getElementById("herotext-wrapper").style.top = "350px";
+	}
+}
+
+
+
+function navBurger() {
+  var x = document.getElementById("burger");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+
+</script>
+</body>
+</html>
